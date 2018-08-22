@@ -54,9 +54,8 @@ install: check-ledger
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiad
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiacli
 
-install_chain:
-	go install $(BUILD_FLAGS) ./cmd/chaind
-	go install $(BUILD_FLAGS) ./cmd/chaincli
+install_relay:
+	go install $(BUILD_FLAGS) ./cmd/relay
 
 install_debug:
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiadebug
